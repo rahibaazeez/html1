@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            color: white;
+        }
+        div
+        {
+            background-color: burlywood;
+            height: 700px;
+            width: 400px;
+            margin-left: 200px;
+            margin-top: 100px;
+            padding: 30px;
+        }
+        label
+        {
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+   
+        <div>
+            <h1>Registration Form</h1>
+            <form >
+                <br><br>
+                <label >Name</label>
+                <input type="text" required><br><br>
+                <label >Pin</label>
+                <input type="number" required><br><br>
+                <label >Password</label>
+                <input type="password" maxlength="10" pattern="[0-9][a-z][A-Z]/10" required title="maximum 10 character"><br><br>
+                <label >DOB</label>
+                <input type="date" required><br><br>
+                <label >Time </label>
+                <input type="time" required><br><br>
+               <label for="">Address</label>
+                <textarea name="" id="" cols="30" rows="10" required>
+                </textarea><br><br>
+                <label >Gender</label>
+                <input type="radio" name="gender" value="Female" required>Female
+                <input type="radio" name="gender" value="Male" required>Male<br><br>
+                <label >Qualification</label>
+                <input type="checkbox" required>10th
+                <input type="checkbox" required>Plustwo
+                <input type="checkbox" required>Degree
+                <input type="checkbox" required>PG 
+                <br><br>
+                <label >District</label>
+                <select  required>
+                    <option value="">Select district</option>
+                    <option value="">Kozhikode</option>
+                    <option value="">Kannur</option>
+                    <option value="">Wayanad</option>
+                    <option value="">Malappuram</option>
+                </select>
+                <br><br>
+                <label for="">Upload your photo</label>
+                <input type="file" required><br><br>
+                <input style="margin-left: 150px;" type="button" value="Submit" required>
+                
+
+            </form>
+        </div>
+   
+    
+   
+</body>
+</html>
