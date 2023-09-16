@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <p onmouseover="myfunction()"  id="on"  style="font-size: 50px;">Mouse over me</p>
+    <script>
+        function myfunction()
+        {
+            var a=document.getElementById("on");
+            a.addEventListener("mouseover", function handlemouseover()
+            {
+                a.style.color="red";
+            
+            }  );
+            a.addEventListener("mouseout", function handlemouseout()
+            {
+                a.style.color="black";
+            }
+
+            );
+
+
+
+        }
+    </script>
+</body>
+</html>
